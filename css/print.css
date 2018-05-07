@@ -1,0 +1,34 @@
+@font-face{ 
+    font-family: 'MetaNorm';
+    font-weight: 100;
+    src: url('../fonts/MetaWeb-Normal.woff') format('woff');
+}
+@font-face{ 
+    font-family: 'MetaBold';
+    font-weight: 100;
+    src: url('../fonts/MetaWeb-Bold.woff') format('woff');
+}
+html, body{
+    font-family: 'MetaNorm';
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img, header, footer, input, textarea, select, .nav-set, .banner-row, .box-control, .btn-wrap, .btn-wrapper, .error-box, .ssl-sicherheit{
+    display: none;
+}
+.breadcrumb{
+    padding: 24px 0;
+}
+.breadcrumb a{
+    padding-right: 18px;
+}
+label{
+    font-family: 'MetaBold';
+    font-size: 18px;
+    padding: 12px 0 0;
+    margin: 0;
+    text-decoration: underline;
+}

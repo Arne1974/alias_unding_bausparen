@@ -1,0 +1,18 @@
+var collector = {},
+	data = [elem1, elem2, elem3];
+
+data.foreach(function(){
+	if(type === 'radio'){
+
+		var elem = $(this),
+			groupName = elem.attr('name'),
+			idName = elem.attr('id'),
+			prop = elem.prop('checked'), 
+			localArray = collector[groupName] || [],
+			objLine = {
+				title: idName,
+				value: prop
+			};
+		localArray.push(objLine);
+	}
+});
